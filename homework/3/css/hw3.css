@@ -1,0 +1,33 @@
+#header {
+    height: 10%;
+    width: 100%;
+    background-image: url("../../../img/1_130420115Z5.png");
+}
+
+#left {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    float: left;
+}
+
+#right {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    float: right;
+}
+
+#footer {
+    height: 10%;
+    width: 100%;
+    background-color: chartreuse;
+    clear: both;
+}
+
+#central {
+    height: 100%;
+    width: 60%;
+    background-color: greenyellow;
+    float: left;
+}

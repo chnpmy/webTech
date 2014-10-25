@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><!-- <!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>homework 3</title>
+    <link rel="stylesheet" type="text/css" href="3/css/hw3.css"/>
+    <script type="text/javascript" src="3/js/check.js"></script>
+    <style type="text/css">
+        p {
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <p>
+        Homework 3
+    </p>
+</div>
+<div id="left">
+    <p>
+        This is left area.
+    </p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<div id="central">
+    <form action="/cgi-bin/submit.pl" method="post" onsubmit="return validate()">
+        <fieldset>
+            <legend>name</legend>
+            First Name:<input type="text" name="first_name" id="fname"/>
+            Last Name:<input type="text" name="last_name" id="lname"/>
+        </fieldset>
+        <fieldset>
+            <legend>age</legend>
+            <input type="text" name="age" id="age"/>
+        </fieldset>
+        <fieldset>
+            <legend>gender:</legend>
+            <input type="radio" name="gender" value="male" checked="checked"/>
+            male
+            <br/>
+            <input type="radio" name="gender" value="female"/>
+            female
+            <br/>
+            <input type="radio" name="gender" value="other"/>
+            other
+        </fieldset>
+        <fieldset>
+            <legend>E-mail</legend>
+            <input type="text" name="email" id="email"/>
+        </fieldset>
+        <p>
+            <input type="submit" value="submit"/>
+            <input type="reset" value="reset"/>
+        </p>
+    </form>
+    <form action="/cgi-bin/list.cgi" method="post">
+        <p>
+            <input type="submit" value="list"/>
+        </p>
+    </form>
+</div>
+<div id="right">
+    <p>
+        This is right area.
+    </p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<div id="footer">
+    <p>
+        This is the footer.
+    </p>
+
+    <p>
+        <img src="3/img/val.png" alt="http://validator.w3.org/"/>
+    </p>
+    <ul style="background-color: #2b542c">
+        <li>
+            This document was successfully checked as XHTML 1.0 Strict!
+        </li>
+        <li>
+            Both C CGI and Perl is used.
+        </li>
+        <li>
+            Relative layout.
+        </li>
+        <li>
+            The validity of the form will be checked by javascript.
+        </li>
+    </ul>
+</div>
+</body>
+</html>
