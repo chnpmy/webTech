@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Homework 4-1</title>
+</head>
+<body>
+<ol>
+    <li>
+        <h4>Give the SELECT command to answer the question <span style="color: red">Who will go to the party held in Peking University?</span>
+        </h4>
+
+        <p>
+            <i>Answer</i> : The SELECT command is <span style="color: blue">SELECT guest.Guest_ID, guest.Guest_Name, guest.E_mail, party.Party_Num, party.Time, party.Place
+
+FROM guest, party, guest_party
+
+WHERE party.Party_Num=guest_party.Party_Num
+
+AND guest_party.Guest_ID=guest.Guest_ID
+
+AND party.Place="Peking University";</span>.
+        </p>
+    </li>
+    <li>
+        <h4>Figure out a way to obtain the column labels returned by <span style="color: red">mysql_fetch_array</span>.
+        </h4>
+
+        <p>
+            <i>Answer</i> : The function mysql_fetch_array() has a form like mysql_fetch_array(data, array_type),
+            if you let array_type = "MYSQL_ASSOC", the function return the data as an associated array. If you
+            travel the keys of the array, you will get the column labels.
+        </p>
+    </li>
+    <li>
+        <h4>Tell the difference between a CGI program and a PHP program executed by a Web Server.</h4>
+
+        <p>
+            <i>Answer</i>:
+        </p>
+        <ul>
+            <li>
+                CGI is separate from web page files, while php can be within web page source code files.
+            </li>
+            <li>
+                <b>Most important thing</b> : php is a kind of language, while CGI means Common Gateway Interface, a kind of technology,
+                They belong to two different levels. In other words, php can be used to implement CGI.
+            </li>
+        </ul>
+    </li>
+</ol>
+</body>
+</html>
