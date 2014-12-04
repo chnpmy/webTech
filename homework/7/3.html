@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>A third shape</title>
+</head>
+<script type="text/javascript">
+    function submitForm(){
+        var a = document.getElementsByName("shape");
+        var shape;
+        for (var i = 0; i < a.length; i++){
+            if (a[i].checked){
+                shape = a[i].value;
+            }
+        }
+        var b = document.getElementsByName("color");
+        var color;
+        for (var j = 0; j < b.length; j++){
+            if (b[j].checked){
+                color = b[j].value;
+            }
+        }
+        var s = "<html><head></head><body>"
+                + "<applet code='ThirdShape.class' width='100' height='100'>" +
+                "<param name='color' value='" + color + "'>" +
+                "<param name='shape' value='" + shape + "'>" +
+                "</applet>"
+                + "</body></html>";
+
+        var win = window.open("about:blank");
+        win.document.write(s);
+        win.document.close();
+    }
+</script>
+<body>
+<form>
+    <p>shape:</p>
+    <input type="radio" name="shape" value="rect" checked="checked"/>Rect
+    <input type="radio" name="shape" value="oval"/>Oval
+    <br/>
+    <p>color</p>
+    <input type="radio" name="color" value="red" checked="checked"/>red
+    <input type="radio" name="color" value="green"/>green
+    <br/>
+    <input type="submit" name="submit" value="OK" onclick="submitForm()"/>
+</form>
+</body>
+</html>

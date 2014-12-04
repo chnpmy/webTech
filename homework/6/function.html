@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>function</title>
+    <script language="javascript">
+        // Using Functions
+
+
+        function myAlert() {
+            window.alert("Hello");
+        }
+
+        function myAlert2(aString) {
+            //this function takes parameter
+            // it also returns a value
+            window.alert("Alerting: " + aString);
+            return 34;
+        }
+
+        function myAlert3(whatever){
+            return whatever * 2.0;
+        }
+        function stringCat(s1, s2){
+            return s1 + "!=" + s2;
+        }
+
+    </script>
+
+    <title>Using Functions</title>
+</head>
+
+<body>
+
+<script language="javascript">
+    //document.write("Mr Pudding says: <b>Hi there</b><br />");
+    // Call functions and pass parameters, get return values
+    myAlert();
+    result = myAlert2("everyone");
+    document.write("The return value was: " + result + "<br/>");
+    document.write("Answer 1:" + myAlert3(result) + "<br/>");
+    document.write("Answer 2:" + stringCat("this", "that"));
+</script>
+
+</body>
+</html>
